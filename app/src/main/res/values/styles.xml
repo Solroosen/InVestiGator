@@ -1,0 +1,60 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorText</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme_No_Title_Bar" parent="AppTheme">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="MainText" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:typeface">sans</item>
+    </style>
+
+    <style name="MenuText" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">true</item>
+
+    </style>
+
+    <style name="heading1" parent="@android:style/TextAppearance.DeviceDefault.Large">
+        <item name="android:textSize">28sp</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="ButtonText" parent="@android:style/Widget.DeviceDefault.Button">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/colorButtonText</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="MainButtons" parent="@android:style/Widget.DeviceDefault.Button.Borderless">
+        <item name="android:background">@drawable/button_colors</item>
+        <item name="android:textAppearance">@style/ButtonText</item>
+    </style>
+
+    <style name="InactiveButtons" parent="@android:style/Widget.DeviceDefault.Button.Borderless">
+        <item name="android:background">@drawable/button_colorinactive</item>
+        <item name="android:textAppearance">@style/ButtonText</item>
+    </style>
+
+    <style name="smallButtons" parent="@android:style/Widget.DeviceDefault.Button.Borderless">
+        <item name="android:background">@drawable/button_colors</item>
+        <item name="android:textAppearance">@style/ButtonText</item>
+        <item name="android:layout_margin">0dp</item>
+    </style>
+
+    <style name="AppTheme_No_Title_Bar.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme_No_Title_Bar.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>

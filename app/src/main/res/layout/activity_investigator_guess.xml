@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_ivestigator_guess"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_margin"
+    android:paddingRight="@dimen/activity_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.investigation_deduction.investigator_guess">
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_arrow_back_black_24dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/guess_backArrow"
+        android:layout_marginRight="@dimen/activity_margin"
+        android:layout_marginEnd="@dimen/activity_margin"/>
+
+    <LinearLayout
+        android:id="@+id/guess_headline_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_toEndOf="@+id/guess_backArrow"
+        android:layout_toRightOf="@+id/guess_backArrow" >
+
+        <TextView
+            android:id="@+id/headline_Guess"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/investigator_guess_headline"
+            android:textColor="@color/colorAccent"
+            android:textSize="24sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/investigator_guess_text"
+            android:id="@+id/guess_text"
+            android:textAppearance="@style/MainText"
+            android:layout_marginBottom="@dimen/activity_beforeafter_text_margin"/>
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/guessed_murderFactName"
+        android:layout_width="@dimen/activity_ListClueImage"
+        android:layout_height="@dimen/activity_ListClueImage"
+        android:layout_toLeftOf="@+id/guessed_murderFactLocation"
+        android:layout_toStartOf="@+id/guessed_murderFactLocation"
+        android:layout_alignBottom="@+id/guess_button_makeGuess"
+        android:layout_marginEnd="@dimen/activity_between_text_margin"
+        android:layout_marginRight="@dimen/activity_between_text_margin"/>
+
+    <ImageView
+        android:id="@+id/guessed_murderFactLocation"
+        android:layout_width="@dimen/activity_ListClueImage"
+        android:layout_height="@dimen/activity_ListClueImage"
+        android:layout_toLeftOf="@+id/guessed_murderFactWeapon"
+        android:layout_toStartOf="@+id/guessed_murderFactWeapon"
+        android:layout_alignBottom="@+id/guess_button_makeGuess"
+        android:layout_marginEnd="@dimen/activity_between_text_margin"
+        android:layout_marginRight="@dimen/activity_between_text_margin"/>
+
+    <ImageView
+        android:id="@+id/guessed_murderFactWeapon"
+        android:layout_width="@dimen/activity_ListClueImage"
+        android:layout_height="@dimen/activity_ListClueImage"
+        android:layout_toLeftOf="@+id/guess_button_makeGuess"
+        android:layout_toStartOf="@+id/guess_button_makeGuess"
+        android:layout_alignBottom="@+id/guess_button_makeGuess"
+        android:layout_marginRight="@dimen/activity_instruction_button_margin"
+        android:layout_marginEnd="@dimen/activity_instruction_button_margin" />
+
+    <Button
+        android:text="@string/investigator_guess_MakeGuess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guess_button_makeGuess"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        style="@style/MainButtons" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/guess_headline_layout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/investigator_guess_radio_NameHead"
+                android:textAppearance="@style/MainText"
+                android:textAlignment="center"
+                android:textSize="18sp"/>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/characterView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                cardElevation="4dp"
+                cardCornerRadius="@dimen/activity_between_text_margin">
+
+                <GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:rowCount="2"
+                    android:columnCount="2">
+
+                    <ImageView
+                        android:layout_width="@dimen/activity_ListClueImage"
+                        android:layout_height="@dimen/activity_ListClueImage"
+                        android:layout_margin="@dimen/activity_between_text_margin"
+                        android:contentDescription="@string/investigator_guess_radio_Lemur"
+                        android:id="@+id/Lemur"
+                        android:clickable="true"
+                        android:src="@drawable/lemur"
+                        android:background="@drawable/imagebutton_bordersolid"/>
+
+                    <ImageView
+                        android:layout_width="@dimen/activity_ListClueImage"
+                        android:layout_height="@dimen/activity_ListClueImage"
+                        android:layout_margin="@dimen/activity_between_text_margin"
+                        android:id="@+id/Platypus"
+                        android:contentDescription="@string/investigator_guess_radio_Platypus"
+                        android:clickable="true"
+                        android:src="@drawable/platypus"
+                        android:background="@drawable/imagebutton_bordersolid"/>
+
+                    <ImageView
+                        android:id="@+id/Feline"
+                        android:layout_width="@dimen/activity_ListClueImage"
+                        android:layout_height="@dimen/activity_ListClueImage"
+                        android:layout_margin="@dimen/activity_between_text_margin"
+                        android:contentDescription="@string/investigator_guess_radio_Feline"
+                        android:clickable="true"
+                        android:src="@drawable/feline"
+                        android:background="@drawable/imagebutton_bordersolid"/>
+
+                    <ImageView
+                        android:id="@+id/Monkey"
+                        android:layout_width="@dimen/activity_ListClueImage"
+                        android:layout_height="@dimen/activity_ListClueImage"
+                        android:layout_margin="@dimen/activity_between_text_margin"
+                        android:contentDescription="@string/investigator_guess_radio_Monkey"
+                        android:clickable="true"
+                        android:src="@drawable/monkey"
+                        android:background="@drawable/imagebutton_bordersolid"/>
+                </GridLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/investigator_guess_radio_LocationHead"
+                android:textAppearance="@style/MainText"
+                android:textAlignment="center"
+                android:textSize="18sp"/>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/locationView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                cardElevation="4dp"
+                cardCornerRadius="@dimen/activity_between_text_margin">
+
+                <GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:rowCount="2"
+                    android:columnCount="2">
+
+                    <ImageView
+                        android:id="@+id/Beach"
+                        android:layout_width="@dimen/activity_ListClueImage"
+                        android:layout_height="@dimen/activity_ListClueImage"
+                        android:layout_margin="@dimen/activity_between_text_margin"
+                        android:contentDescription="@string/investigator_guess_radio_beach"
+                        android:clickable="true"
+                        android:src="@drawable/beach"
+                        android:background="@drawable/imagebutton_bordersolid"/>
+
+                    <ImageView
+                        android:id="@+id/Cave"
+                        android:layout_width="@dimen/activity_ListClueImage"
+                        android:layout_height="@dimen/activity_ListClueImage"
+                        android:layout_margin="@dimen/activity_between_text_margin"
+                        android:contentDescription="@string/investigator_guess_radio_cave"
+                        android:clickable="true"
+                        android:src="@drawable/cave"
+                        android:background="@drawable/imagebutton_bordersolid"/>
+
+                    <ImageView
+                        android:id="@+id/Forest"
+                        android:layout_width="@dimen/activity_ListClueImage"
+                        android:layout_height="@dimen/activity_ListClueImage"
+                        android:layout_margin="@dimen/activity_between_text_margin"
+                        android:contentDescription="@string/investigator_guess_radio_forest"
+                        android:clickable="true"
+                        android:src="@drawable/forest"
+                        android:background="@drawable/imagebutton_bordersolid"/>
+
+                    <ImageView
+                        android:id="@+id/Savannah"
+                        android:layout_width="@dimen/activity_ListClueImage"
+                        android:layout_height="@dimen/activity_ListClueImage"
+                        android:layout_margin="@dimen/activity_between_text_margin"
+                        android:contentDescription="@string/investigator_guess_radio_savannah"
+                        android:clickable="true"
+                        android:src="@drawable/savannah"
+                        android:background="@drawable/imagebutton_bordersolid"/>
+                </GridLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/investigator_guess_radio_WeaponHead"
+                android:textAppearance="@style/MainText"
+                android:textAlignment="center"
+                android:textSize="18sp"/>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/weaponView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                cardElevation="4dp"
+                cardCornerRadius="@dimen/activity_between_text_margin">
+
+                <GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:rowCount="2"
+                    android:columnCount="2">
+
+                    <ImageView
+                        android:id="@+id/Gun"
+                        android:layout_width="@dimen/activity_ListClueImage"
+                        android:layout_height="@dimen/activity_ListClueImage"
+                        android:layout_margin="@dimen/activity_between_text_margin"
+                        android:contentDescription="@string/investigator_guess_radio_gun"
+                        android:clickable="true"
+                        android:src="@drawable/gun"
+                        android:background="@drawable/imagebutton_bordersolid"/>
+
+                    <ImageView
+                        android:id="@+id/Rope"
+                        android:layout_width="@dimen/activity_ListClueImage"
+                        android:layout_height="@dimen/activity_ListClueImage"
+                        android:layout_margin="@dimen/activity_between_text_margin"
+                        android:contentDescription="@string/investigator_guess_radio_rope"
+                        android:clickable="true"
+                        android:src="@drawable/rope"
+                        android:background="@drawable/imagebutton_bordersolid"/>
+
+                    <ImageView
+                        android:id="@+id/Knife"
+                        android:layout_width="@dimen/activity_ListClueImage"
+                        android:layout_height="@dimen/activity_ListClueImage"
+                        android:layout_margin="@dimen/activity_between_text_margin"
+                        android:contentDescription="@string/investigator_guess_radio_knife"
+                        android:clickable="true"
+                        android:src="@drawable/knife"
+                        android:background="@drawable/imagebutton_bordersolid"/>
+
+                    <ImageView
+                        android:id="@+id/Poison"
+                        android:layout_width="@dimen/activity_ListClueImage"
+                        android:layout_height="@dimen/activity_ListClueImage"
+                        android:layout_margin="@dimen/activity_between_text_margin"
+                        android:contentDescription="@string/investigator_guess_radio_poison"
+                        android:clickable="true"
+                        android:src="@drawable/poison"
+                        android:background="@drawable/imagebutton_bordersolid"
+                        style="@style/Base.Animation.AppCompat.DropDownUp"/>
+                </GridLayout>
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

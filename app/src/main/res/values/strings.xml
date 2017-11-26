@@ -1,0 +1,114 @@
+<resources>
+    <string name="app_name">Investigator</string>
+    <!-- strings for main activity ui -->
+    <string name="investigation_instruction_button">Instructions</string>
+    <string name="investigation_play_button">Start Investigation!</string>
+    <string name="investigation_main_headline">INVESTIGATOR\nA game of deduction</string>
+    <string name="investigation_main_text_start">Welcome to the game of Investigator!</string>
+    <string name="investigation_main_text_rest1">There has been a murder! Figure out the facts of the murder to catch the murderer and win!</string>
+    <string name="investigation_main_text_rest2">Read the instructions to learn how to play and then start the Investigation!</string>
+
+    <!-- strings for main menu -->
+    <string name="investigator_main_menu_stats">Stats</string>
+    <string name="investigator_main_menu_stat1">Highscore:</string>
+    <string name="investigator_main_menu_stat2">Played games:</string>
+    <string name="investigator_main_menu_stat3">Won games:</string>
+    <string name="investigator_main_menu_stat4">Lost games:</string>
+    <string name="investigator_main_menu_settings">Settings</string>
+    <string name="investigator_main_menu_credits">Credits</string>
+    <string name="investigator_main_menu_creditsDev">Developer:</string>
+    <string name="investigator_main_menu_creditsDevN">Sofie Roos</string>
+    <string name="investigator_main_menu_creditsUi">Design:</string>
+    <string name="investigator_main_menu_creditsUiN">Martin Rutkowski</string>
+    <string name="investigator_main_menu_creditsGraph">Graphics:</string>
+    <string name="investigator_main_menu_creditsGraphN">Ingrid Eklund</string>
+
+    <!-- strings for instructions ui -->
+    <string name="investigator_instruction_Swipe">Swipe to see next view</string>
+    <string name="investigation_instruction_backtoMain">Back to Start</string>
+
+    <string name="investigation_instruction_headline">Instructions</string>
+    <string name="investigation_instruction_text1">To play the game you use two simple inputs:</string>
+    <string name="investigation_instruction_clue">Clue</string>
+    <string name="investigation_instruction_guess">Guess</string>
+    <string name="investigation_instruction_clue_text">If you press clue you will get a new clue in the form of a person</string>
+    <string name="investigation_instruction_guess_text">If you press guess you can guess who the murderer is, but be careful, you only get one try!</string>
+    <string name="investigation_instruction1_progress">Page 1 of 3</string>
+
+    <!-- instructions 2 -->
+    <string name="investigation_instruction_text2">The clues</string>
+    <string name="investigation_instruction_text3">A clue consists of three facts:\nName, Location of murder, Weapon</string>
+    <string name="investigation_instruction_text4">A clue also has a status of Innocent or Suspect. If the status is innocent that means no facts in the clue matches the murder. If it is suspect it means that one or two of the facts matches the murder!</string>
+    <string name="investigator_instruction_text7">NOTE:\nA generated clue and the murder will never have identical facts</string>
+    <string name="investigation_instruction_text_clueEx">INNOCENT\nHolly Hoot, Rainforest, Knife</string>
+    <string name="investigation_instruction_text5">Neither Holly Hoot, the Rainforest or a Knife where involved in the murder.</string>
+    <string name="investigation_instruction_text_clueEx2">SUSPECT\nHolly Hoot, Rainforest, Gun</string>
+    <string name="investigation_instruction_text6">We now know the murder weapon was a gun, since we know Holly Hoot and the Rainforest are not facts of the murder!</string>
+    <string name="investigation_instruction2_progress">Page 2 of 3</string>
+
+    <!-- instructions 3 -->
+    <string name="investigation_instruction3_headline">Guessing the murder</string>
+    <string name="investigation_instruction3_text1">When you know the facts about the murder it\'s time to make a guess, but be sure it\'s right, you only get one try!</string>
+    <string name="investigation_instruction3_text2">To make a guess you push the guess button</string>
+    <string name="investigation_instruction3_text3">Mark the facts of the murder and then push Enter Guess and see if you were right!</string>
+    <string name="investigation_instruction3_progress">Page 3 of 3</string>
+
+    <!-- play  -->
+    <string name="investigation_play_back">quit</string>
+    <string name="investigator_play_guess">Guess</string>
+    <string name="investigator_play_counter">Number of clues given:</string>
+    <string name="investigation_play_counterNum">0</string>
+    <string name="investigator_play_newClue">Suspect\nTristan Trumphet, Savannah, Knife</string>
+    <string name="investigator_play_clue">Clue</string>
+    <string name="investigator_play_AllClues">Clues</string>
+    <string name="investigator_play_innocent">Innocents</string>
+    <string name="investigator_play_suspect">Suspects</string>
+
+    <string name="investigator_play_noMoreCluesHeading">Out of clues!</string>
+    <string name="investigator_play_noMoreClues">There are no more clues to give, Guess or quit!</string>
+
+    <!-- guess -->
+
+    <string name="investigator_guess_headline">Make your guess!</string>
+    <string name="investigator_guess_text">Choose the facts that describe the murder to catch the murderer</string>
+
+    <string name="investigator_guess_radio_NameHead">Characters</string>
+    <string name="investigator_guess_radio_Platypus">Platypus</string>
+    <string name="investigator_guess_radio_Lemur">Lemur</string>
+    <string name="investigator_guess_radio_Feline">Feline</string>
+    <string name="investigator_guess_radio_Monkey">Monkey</string>
+
+    <string name="investigator_guess_radio_LocationHead">Locations</string>
+    <string name="investigator_guess_radio_forest">Forest</string>
+    <string name="investigator_guess_radio_cave">Cave</string>
+    <string name="investigator_guess_radio_beach">Beach</string>
+    <string name="investigator_guess_radio_savannah">Savannah</string>
+
+    <string name="investigator_guess_radio_WeaponHead">Weapons</string>
+    <string name="investigator_guess_radio_gun">Gun</string>
+    <string name="investigator_guess_radio_knife">Knife</string>
+    <string name="investigator_guess_radio_rope">Rope</string>
+    <string name="investigator_guess_radio_poison">Poison</string>
+
+    <string name="investigator_guess_murder">Chosen facts: </string>
+    <string name="investigator_guess_MakeGuess">Guess!</string>
+
+    <!-- final -->
+
+    <string name="investigator_final_BackToMeny">Back to Menu</string>
+    <string name="investigator_final_PlayAgain">Play Again!</string>
+
+    <!-- final activity win -->
+    <string name="investigator_final_Win_Head">You win!</string>
+    <string name="investigator_final_Win_Main1">The murderer will now be caught and imprisoned!</string>
+    <string name="investigator_final_Win_Main2">You guessed:</string>
+    <string name="investigator_final_Win_Counter1">Score:\u0020</string>
+
+    <!-- final activity lose -->
+    <string name="investigator_final_Lose_Head">You lose!</string>
+    <string name="investigator_final_Lose_Main1">The murderer will now go free and continue to murder innocents!</string>
+    <string name="investigator_final_Lose_Main2">The correct facts where:</string>
+
+</resources>
+
+

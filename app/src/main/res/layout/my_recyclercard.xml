@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/recyclerCard"
+    android:layout_width="@dimen/activity_clueCardWidth"
+    android:layout_height="wrap_content"
+    app:cardElevation="4dp"
+    app:cardCornerRadius="@dimen/activity_between_text_margin"
+    android:layout_marginBottom="@dimen/activity_between_text_margin"
+    android:layout_marginStart="@dimen/activity_between_text_margin"
+    android:layout_marginLeft="@dimen/activity_between_text_margin"
+    android:layout_marginRight="@dimen/activity_between_text_margin"
+    android:layout_marginEnd="@dimen/activity_between_text_margin" >
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:rowCount="1"
+        android:layout_margin="@dimen/activity_between_text_margin"
+        >
+
+        <ImageView
+            android:layout_width="@dimen/activity_ListClueImage"
+            android:layout_height="@dimen/activity_ListClueImage"
+            android:layout_marginRight="@dimen/activity_between_text_margin"
+            android:layout_marginEnd="@dimen/activity_between_text_margin"
+            android:layout_gravity="start"
+            android:onClick="clickedCharacter"
+            android:clickable="true"
+            android:id="@+id/r_imageChar"
+            android:background="@drawable/imagebutton_borderthin"/>
+
+        <ImageView
+            android:layout_width="@dimen/activity_ListClueImage"
+            android:layout_height="@dimen/activity_ListClueImage"
+            android:layout_marginRight="@dimen/activity_between_text_margin"
+            android:layout_marginEnd="@dimen/activity_between_text_margin"
+            android:layout_gravity="center"
+            android:onClick="clickedLocation"
+            android:clickable="true"
+            android:id="@+id/r_imageLoca"
+            android:background="@drawable/imagebutton_borderthin"/>
+
+        <ImageView
+            android:layout_width="@dimen/activity_ListClueImage"
+            android:layout_height="@dimen/activity_ListClueImage"
+            android:layout_gravity="end"
+            android:onClick="clickedWeapon"
+            android:clickable="true"
+            android:id="@+id/r_imageWeap"
+            android:background="@drawable/imagebutton_borderthin"/>
+    </GridLayout>
+</android.support.v7.widget.CardView>

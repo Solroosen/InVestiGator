@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.investigation_deduction.investigator_stats">
+
+    <TextView
+        android:id="@+id/stats_heading"
+        android:text="Statistics"
+        android:padding="@dimen/activity_beforeafter_text_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/heading1"
+        android:textAlignment="center"/>
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/stats_heading"
+        android:layout_centerHorizontal="true">
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/activity_between_text_margin" >
+
+            <TextView
+                android:text="Highscore"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/stats_highScore"
+                android:text="-1"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="@dimen/activity_between_text_margin"
+                android:layout_marginStart="@dimen/activity_between_text_margin" />
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/activity_between_text_margin">
+
+            <TextView
+                android:text="Played games" />
+
+            <TextView
+                android:id="@+id/stats_numberOfPlayed"
+                android:text="0"
+                android:textStyle="bold"
+                android:layout_marginLeft="@dimen/activity_stats_tableMargin"
+                android:layout_marginStart="@dimen/activity_stats_tableMargin"/>
+        </TableRow>
+
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/activity_between_text_margin">
+
+            <TextView
+                android:text="Won games" />
+
+            <TextView
+                android:id="@+id/stats_numberOfWins"
+                android:text="0"
+                android:textStyle="bold"
+                android:layout_marginLeft="@dimen/activity_stats_tableMargin"
+                android:layout_marginStart="@dimen/activity_stats_tableMargin" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/activity_between_text_margin" >
+
+            <TextView
+                android:text="Lost games"/>
+
+            <TextView
+                android:id="@+id/stats_losses"
+                android:text="0"
+                android:textStyle="bold"
+                android:layout_marginLeft="@dimen/activity_stats_tableMargin"
+                android:layout_marginStart="@dimen/activity_stats_tableMargin" />
+
+
+        </TableRow>
+    </TableLayout>
+</RelativeLayout>
